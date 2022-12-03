@@ -6,7 +6,7 @@ def getdate():
 
 name = ['Harry', 'Rohan', 'Hammad']
 
-inp = int(input("\tHello, Welcome!\nFor Log: Type 1 \nFor retrieve: Type 2\n"))
+inp = int(input("\tHello, Welcome!\n\tFor Log: Type 1 \n\tFor retrieve: Type 2\n"))
 
 def name1():
     inp_name = int(input("Which client do you want to see:\n1: Harry\n2: Rohan\n3: Hammad\n"))
@@ -27,4 +27,17 @@ if inp == 1:
         data1.write(str(getdate())+"\t\t" + data)
         data1.close()
 if inp == 2: 
-    
+    n=name1()
+    inp_log2 = input("What you want to retrieve:\n1: Food\n2: Exercise\n")
+    if inp_log2 == 1:
+        file = name[n - 1] + "food.txt"
+        data1 = open(file, "r")
+        print("Now you can retrieve\n")
+        print(data1.read())
+        data1.close()
+    else:
+        file = name[n - 1] + "exercise.txt"
+        data1 = open(file, "r")
+        print("Now you can retrieve\n")
+        print(data1.read())
+        data1.close()

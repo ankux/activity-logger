@@ -1,2 +1,2 @@
-# food-and-exercise-log
-Food and Exercise Log
+# Food and Exercise Log
+Customizable Log, can be used for logging daily activities, syllabus coverage, to-do list etc.
